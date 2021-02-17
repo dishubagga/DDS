@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{C27A3E98-3FB0-4893-B8B3-B478A6B3A87C}|Default">
+  <MonoDevelop.Ide.ItemProperties.AspNetCoreWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AspNetCoreWebApp/Views/HelloWorld/Welcome.cshtml">
+    <Files>
+      <File FileName="AspNetCoreWebApp/Controllers/HelloWorldController.cs" Line="21" Column="45" />
+      <File FileName="AspNetCoreWebApp/Views/Index.cshtml" Line="14" Column="1" />
+      <File FileName="AspNetCoreWebApp/Views/Shared/_Layout.cshtml" Line="6" Column="18" />
+      <File FileName="AspNetCoreWebApp/Views/HelloWorld/Welcome.cshtml" Line="9" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AspNetCoreWebApp" expanded="True">
+            <Node name="AspNetCoreWebApp" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="HelloWorld" expanded="True" selected="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

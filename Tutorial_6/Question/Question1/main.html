@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="gr__bildungsportal_sachsen_de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>WebSocket Client</title>
+    <style>
+        #output {
+            border: solid 1px #000;
+        }
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+    <form id="form">
+        <input type="text" id="message">
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        var inputBox = document.getElementById("message");
+        var output = document.getElementById("output");
+        var form = document.getElementById("form");
+
+        try {
+            var host = "ws://localhost:3000/stuff";
+            console.log("Host:", host);
+
+            //Open up a WebSocket connection named s 
+            var s = new WebSocket(host);
+            s.onopen = function (e) {
+                console.log('open');
+                // Log messages that the socket is open
+
+            };
+
+            s.onclose = function (e) {
+                console.log('close');
+                // Log messages that the socket is closed
+            };
+
+            s.onmessage = function (e) {
+                console.log(JSON.parse(e.data));
+				p = document.createElement('p');
+				p.innerHTML = e.data;
+				document.getElementById('output').appendChild(p);
+                // Log the messages form the server to the output
+            };
+
+            s.onerror = function (e) {
+                console.log("Socket error:", e);
+            };
+
+        } catch (ex) {
+            console.log("Socket exception:", ex);
+        }
+        document.querySelector('form').addEventListener('submit', submit, false);
+
+		function submit(event) {
+			event.preventDefault();
+			s.send(JSON.stringify({name: "Dishu", age: 23}));
+		}
+
+        //Send the data
+    </script>
+
+
+</body>
+
+</html>

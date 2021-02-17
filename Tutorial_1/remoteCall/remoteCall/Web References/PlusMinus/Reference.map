@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://vsr-demo.informatik.tu-chemnitz.de/WebServices/PlusMinusService/PlusMinusService.asmx?disco" filename="PlusMinusService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://vsr-demo.informatik.tu-chemnitz.de/WebServices/PlusMinusService/PlusMinusService.asmx?wsdl" filename="PlusMinusService.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

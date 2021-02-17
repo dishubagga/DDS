@@ -1,0 +1,4 @@
+/Users/dishubagga/Documents/study/Practice(DDS)/Tutorial/Tutorial_1/remoteCall/remoteCall/bin/Release/remoteCall.exe.config
+/Users/dishubagga/Documents/study/Practice(DDS)/Tutorial/Tutorial_1/remoteCall/remoteCall/bin/Release/remoteCall.exe
+/Users/dishubagga/Documents/study/Practice(DDS)/Tutorial/Tutorial_1/remoteCall/remoteCall/obj/x86/Release/remoteCall.csproj.CoreCompileInputs.cache
+/Users/dishubagga/Documents/study/Practice(DDS)/Tutorial/Tutorial_1/remoteCall/remoteCall/obj/x86/Release/remoteCall.exe

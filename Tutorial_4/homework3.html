@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        * {
+            font: 14px normal Arial, sans-serif;
+            color: #000000;
+        }
+
+        table {
+            margin: 50px auto;
+        }
+
+        table,
+        td {
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #eeeeee;
+            width: 80px;
+            height: 80px;
+        }
+
+        table:first-child tr td {
+            cursor: pointer;
+        }
+
+        td[colspan="4"] {
+            text-align: center;
+        }
+    </style>
+    <script>
+        //insert JavaScript code here
+        window.onload = function () {
+            document.getElementById('mybutton').addEventListener('click', buttonPressed);
+        }
+
+        function buttonPressed() {
+            text = document.getElementById('text').value;
+            fieldX = document.getElementById('field_x').value;
+            fieldY = document.getElementById('field_y').value;
+            css = document.getElementById('css').value;
+            var firstTableBody = document.getElementsByTagName('tbody')[0];
+            var rows = firstTableBody.rows.length;
+            var columns = firstTableBody.rows[0].cells.length;
+            if (fieldX > rows) {
+                expandTableRow(fieldX, rows, columns, firstTableBody);
+                rows = firstTableBody.rows.length;
+            }
+            if (fieldY > columns) {
+                expandTableColumn(fieldY, rows, columns, firstTableBody);
+            }
+            fillTable(fieldX, fieldY, firstTableBody);
+        }
+
+        function expandTableRow(fieldX, rows, columns, firstTableBody) {
+            for (var j = rows; j < fieldX; j++) {
+
+                var rowToAdd = document.createElement('tr');
+                firstTableBody.appendChild(rowToAdd);
+                for (var i = 0; i < columns; i++) {
+                    var t = document.createElement('td')
+                    rowToAdd.appendChild(t)
+                }
+            }
+        }
+
+        function expandTableColumn(fieldY, rows, columns, firstTableBody) {
+            var tableRow = firstTableBody.getElementsByTagName('tr');
+            for (i = 0; i < rows; i++) {
+
+                for (j = columns; j < fieldY; j++) {
+                    var t = document.createElement('td');
+                    tableRow[i].appendChild(t);
+                    // var colsToAdd = document.createElement('td');
+                }
+            }
+        }
+
+        function fillTable(xField, yField, firstTableBody) {
+            var tRow = firstTableBody.getElementsByTagName('tr')[xField - 1];
+            var tCol = tRow.getElementsByTagName('td')[yField - 1];
+            tCol.innerHTML = document.getElementById('text').value;
+            tCol.style = document.getElementById('css').value;
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Fill a field:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Text: <br /><input type="text" id="text" value=""></td>
+                <td>Field X: <br /><input type="text" id="field_x" value=""></td>
+                <td>Field Y: <br /><input type="text" id="field_y" value=""></td>
+                <td>CSS: <br /><input type="text" id="css" value=""></td>
+            </tr>
+            <tr>
+                <td colspan="4"><button id="mybutton">Fill</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{0F4A8F04-613E-4C42-8AC5-2A3C192248A8}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="task/Web.config">
+    <Files>
+      <File FileName="task/App_Start/BundleConfig.cs" Line="1" Column="1" />
+      <File FileName="task/ViewSwitcher.ascx" Line="1" Column="1" />
+      <File FileName="task/Web.config" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="taskSolution" expanded="True">
+            <Node name="task" expanded="True">
+              <Node name="Scripts" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.task PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

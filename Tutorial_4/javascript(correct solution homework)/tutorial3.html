@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        tr:nth-child(even) td:nth-child(odd),
+        tr:nth-child(odd) td:nth-child(even) {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        const table = document.querySelector('table tbody');
+        for (let i = 0; i < 8; i++) {
+            const tr = document.createElement('tr');
+            for (let j = 0; j < 8; j++) {
+                const td = document.createElement('td');
+                td.addEventListener('click', placeTower);
+                tr.appendChild(td);
+            }
+            table.appendChild(tr);
+        }
+
+        const tower = document.createTextNode('ß');
+        table.querySelector('tr:first-child td:first-child').appendChild(tower);
+
+        function placeTower() {
+            const x_old = tower.parentNode.cellIndex;
+            const y_old = tower.parentNode.parentNode.rowIndex;
+            alert(this.cellIndex)
+            alert(this.parentNode.rowIndex)
+            const x_new = this.cellIndex;
+            const y_new = this.parentNode.rowIndex;
+            if (x_old == x_new || y_old == y_new) {
+                this.appendChild(tower);
+            } else {
+                alert('Wrong move');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{97CAA280-60AF-4E66-BC91-AFD144B8767F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebFormMVC/Models/NameModel.cs">
+    <Files>
+      <File FileName="WebFormMVC/Controllers/HomeController.cs" Line="9" Column="18" />
+      <File FileName="WebFormMVC/Models/NameModel.cs" Line="33" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebFormMVC" expanded="True">
+            <Node name="WebFormMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="NameModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WebFormMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

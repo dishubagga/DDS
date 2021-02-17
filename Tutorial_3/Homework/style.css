@@ -1,0 +1,62 @@
+h1{
+    background-color:red;
+    padding: 5px;
+}
+
+body {
+    background-color: yellow;
+}
+
+#wrapper{
+    width: 1024px
+}
+
+#left{
+    float: left;
+    width: 200px;
+     height: 1000px;
+    border-right: 1px solid black
+
+}
+
+#right{
+    float: right;
+    width: 800px;
+}
+.backgroundText{
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    z-index: -1;
+    font-style: italic;
+    font-weight: normal;
+    color: orange;
+    font-size: 150px;
+    font-family: sans-serif;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    height: 50px;
+    padding: 0px 30px 0px 10px;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+a {
+    color: #0000cc;
+}
+
+th {
+    color: #fff;
+    background-color: #006432;
+    font-size: 20px;
+}
